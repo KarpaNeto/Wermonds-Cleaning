@@ -1,13 +1,13 @@
 .menu-btn {
   position: absolute;
-  color: #8ddcd6;
+  color: rgba(0, 110, 88, 0.5);
   font-size: 30px;
   margin: 25px;
   cursor: pointer;
 }
 
 .side-bar {
-  background: rgba(157, 228, 214, 0.274);
+  background: rgba(0, 110, 88, 0.274);
   width: 290px;
   height: 100vh;
   position: fixed;
