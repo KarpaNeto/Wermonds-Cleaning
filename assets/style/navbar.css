@@ -1,0 +1,74 @@
+.menu-btn {
+  position: absolute;
+  color: #8ddcd6;
+  font-size: 30px;
+  margin: 25px;
+  cursor: pointer;
+}
+
+.side-bar {
+  background: rgba(157, 228, 214, 0.274);
+  width: 290px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  overflow-y: auto;
+  transition: 0.9s ease-in-out;
+  transition-property: left;
+}
+.side-bar.active {
+  left: 0;
+}
+.side-bar::-webkit-scrollbar {
+  display: none;
+}
+.side-bar .menu {
+  width: 100%;
+  margin-top: 80px;
+}
+.side-bar .menu .item {
+  position: relative;
+  cursor: pointer;
+}
+.side-bar .menu .item a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 5px 30px;
+  line-height: 60px;
+}
+.side-bar .menu .item a:hover {
+  background: #4ce2fd42;
+  transition: 0.3s ease-in-out;
+}
+.side-bar .menu .item i {
+  margin-right: 15px;
+}
+.side-bar .menu .item .dropdown {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  transition: 0.3s ease-in-out;
+}
+.side-bar .menu .item .sub-menu {
+  background: rgba(255, 255, 255, 0.349);
+  display: none;
+}
+.side-bar .menu .item .sub-menu a {
+  padding-left: 80px;
+}
+.side-bar .rotate {
+  transform: rotate(90deg);
+}
+.side-bar .close-btn {
+  position: absolute;
+  color: #fff;
+  font-size: 30px;
+  right: 0;
+  margin: 25px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=navbar.css.map */
