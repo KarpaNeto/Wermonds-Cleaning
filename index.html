@@ -19,8 +19,8 @@
         <div class="intro__background"></div>
         <nav class="nav">
             <a href="#" class="nav__logo"><img src="assets/img/logo.png" alt=""></a>
-            <div class="nav__container">
-               <a href="" class="close-btn"> <i class="fa fa-times"></i></a>
+            <div class="nav__container" id="navContainer">
+                <a href="#" class="mobile-btn__close" id="closeBtn" onclick="closeNav()"> <i class="fa fa-times"></i></a>
                 <ul class="nav__list">
                     <li class="nav__items">
                         <a href="#" class="nav__links">HOME</a>
@@ -39,7 +39,7 @@
                     </li>
                 </ul>
             </div>
-            <a href=""class="open-btn"><i class="fa fa-bars"></i></a>
+            <a href="#" class="mobile-btn__open" id="openBtn" onclick="openNav()"><i class="fa fa-bars"></i></a>
         </nav>
         <div class="intro__container">
             <h1 class="intro__title">A Tradition of Quality Cleaning</h1>
@@ -47,9 +47,7 @@
             <a href="#" class="btn">Read More</a>
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="/assets/js/index.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
