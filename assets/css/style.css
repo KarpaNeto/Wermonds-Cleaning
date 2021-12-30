@@ -261,7 +261,7 @@ li {
 
 .about__right {
     flex: 1;
-    padding: 20px;
+    padding: 2rem;
     margin-right: 3rem;
 }
 
@@ -330,7 +330,7 @@ li {
     }
 
     .about__right {
-        margin-top: 4rem;
+        margin: 4rem 0;
     }
 
 
