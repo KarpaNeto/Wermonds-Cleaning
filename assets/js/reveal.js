@@ -1,3 +1,4 @@
+window.addEventListener("scroll", scrollReveal);
 function scrollReveal() {
 	var revealPoint = 150;
 	var revealElement = document.querySelectorAll("section");
@@ -12,5 +13,5 @@ function scrollReveal() {
 	}
 }
 
-window.addEventListener("scroll", scrollReveal);
+
 scrollReveal();
