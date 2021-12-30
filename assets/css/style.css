@@ -200,6 +200,7 @@ li {
     justify-content: center;
     position: relative;
     padding: 2rem;
+    text-align: center;
 }
 
 .intro__title {
