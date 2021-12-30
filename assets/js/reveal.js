@@ -1,21 +1,16 @@
-window.addEventListener('scroll', reveal);
-
-function reveal() {
-    var reveals = document.querySelectorAll('.reveal');
-    
-    for(var i = 0; i< reveals.lenght; i++){
-        
-        var windowheight = window.innerHeight;
-        var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 150;
-        
-        if(revealtop < windowheight - revealpoint){
-            reveals[i].classList.add('active');
-        }
-        else{
-        reveals[i].classList.remove('active');
-        }
-    }
+function scrollReveal() {
+	var revealPoint = 150;
+	var revealElement = document.querySelectorAll(".reveal");
+	for (var i = 0; i < revealElement.length; i++) {
+		var windowHeight = window.innerHeight;
+		var revealTop = revealElement[i].getBoundingClientRect().top;
+		if (revealTop < windowHeight - revealPoint) {
+			revealElement[i].classList.add("active");
+		} else {
+			revealElement[i].classList.remove("active");
+		}
+	}
 }
 
-reveal();
+window.addEventListener("scroll", scrollReveal);
+scrollReveal();
