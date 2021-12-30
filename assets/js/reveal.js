@@ -17,3 +17,5 @@ function reveal() {
         }
     }
 }
+
+reveal();
