@@ -3,6 +3,7 @@ var openBtn = document.getElementById('openBtn');
 function openNav() {
     navContainer.style.right = "0";
     openBtn.style.display = "none";
+
 }
 
 function closeNav() {
