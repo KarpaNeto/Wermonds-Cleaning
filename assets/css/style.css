@@ -365,7 +365,14 @@ li {
 
 
 
+/*======STEPS=====*/
+.step {
+    display: flex;
+}
 
-
+.step__title {
+    display: flex;
+    flex-direction: ;
+}
 
 /*==========GLOBAL MOBILE===========*/
