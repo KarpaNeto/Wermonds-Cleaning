@@ -10,7 +10,6 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
     overflow-x: hidden;
     letter-spacing: .1rem;
 }
@@ -19,6 +18,9 @@ section {
     width: 100%;
     height: 100vh;
     position: relative;
+    padding: 2rem;
+    margin: 2.5rem 0;
+   
 }
 
 a {
@@ -44,7 +46,7 @@ li {
     position: fixed;
     width: 100%;
     height: 80px;
-    padding: 20px 40px;
+    padding: 1rem 2rem;
     background-color: rgb(255,255,255,0.3);
     backdrop-filter: blur(15px);
     z-index: 1000;
@@ -109,11 +111,15 @@ li {
     visibility: hidden;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     .nav__logo {
         display: block;
         width: 50%;
+    }
+
+    .nav__logo-title {
+        font-size: 1rem;
     }
 
     .nav__items {
@@ -195,22 +201,25 @@ li {
 .intro__container {
     width: 100%;
     height: 100%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2rem;
+    text-align: center;
 }
 
 .intro__title {
+    padding: 1rem;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 4rem;
     color: rgb(255, 255, 255);
 }
 
 .intro__container p {
     margin: 10px 0 40px;
-    font-size: 16px;
+    font-size: 1rem;
     color: rgb(133, 133, 133);
 }
 
@@ -233,9 +242,7 @@ li {
 
 @media (max-width: 768px) {
 
-    .intro__container{
-        padding: 0 2rem;
-    }
+  
     .intro__title {
         font-size: 2.5rem;
     }
@@ -262,12 +269,11 @@ li {
 .about__right {
     flex: 1;
     padding: 2rem;
-    margin-right: 3rem;
 }
 
 .about__card.bg {
     position: absolute;
-    top: 100px;
+    top: 50px;
     left: 100px;
     background-color: rgba(122,212,213, 0.2);
     filter: blur(1px);
@@ -276,7 +282,7 @@ li {
 
 .about__card {
     width: 60%;
-    height: 70vh;
+    height: 60vh;
     border-radius: 30px;
     position: relative;
     overflow: hidden;
@@ -318,8 +324,28 @@ li {
     color: #23d8f8;
    
 }
+@media (max-width: 1400px)  {
+    .about {
+        
+        flex-direction: column;
+    }
 
+    .about__card {
+        width: 100%;
+        height: 50vh;
+    }
+}
+@media (max-width: 1025px) {
+    .about {
+        
+        flex-direction: column;
+    }
 
+    .about__card {
+        width: 100%;
+        height: 30vh;
+    }
+}
 @media (max-width: 768px) {
     .about {
         flex-direction: column;
@@ -343,4 +369,3 @@ li {
 
 
 /*==========GLOBAL MOBILE===========*/
-
