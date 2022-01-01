@@ -10,3 +10,46 @@ function closeNav() {
     navContainer.style.right = "-500px";
     openBtn.style.display = "block";
 }
+window.addEventListener("scroll", scrollReveal);
+function scrollReveal() {
+  var revealPoint = 120;
+  var revealElement = document.querySelectorAll(".reveal");
+  for (var i = 0; i < revealElement.length; i++) {
+    var windowHeight = window.innerHeight;
+    var revealTop = revealElement[i].getBoundingClientRect().top;
+
+    if (revealTop < windowHeight - revealPoint) {
+      revealElement[i].classList.add("active");
+    } else {
+      revealElement[i].classList.remove("active");
+    }
+  }
+}
+
+const accordionItems = document.querySelectorAll(".faq__item");
+
+accordionItems.forEach((item) => {
+  const accordionHeader = item.querySelector(".faq__header");
+
+  accordionHeader.addEventListener("click", () => {
+    const openItem = document.querySelector(".accordion-open");
+
+    toggleItem(item);
+
+    if (openItem && openItem !== item) {
+      toggleItem(openItem);
+    }
+  });
+});
+
+const toggleItem = (item) => {
+  const accordionContent = item.querySelector(".faq__content");
+
+  if (item.classList.contains("accordion-open")) {
+    accordionContent.removeAttribute("style");
+    item.classList.remove("accordion-open");
+  } else {
+    accordionContent.style.height = accordionContent.scrollHeight + "px";
+    item.classList.add("accordion-open");
+  }
+};

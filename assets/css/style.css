@@ -2,44 +2,62 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
+  }
+  
+  html {
     scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
     overflow-x: hidden;
-    letter-spacing: .1rem;
-}
-
-section {
+    letter-spacing: 0.1rem;
+  }
+  
+  section {
     width: 100%;
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
     position: relative;
     padding: 2rem;
-    margin: 2.5rem 0;
-   
-}
-
-a {
+    top: 80px;
+  }
+  
+  a {
     text-decoration: none;
-}
-
-li {
+  }
+  
+  li {
     list-style: none;
-}
-
-
-/*===============HEADER=================*/
-.header {
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: rgb(100, 100, 100);
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(8, 49, 56);
+  }
+  
+  .btn:hover {
+    background-color: rgba(17, 104, 120, 0.2);
+    backdrop-filter: blur(15px);
+    color: #fff;
+    transition: 0.5s ease;
+  }
+  
+  /*===============HEADER=================*/
+  .header {
     height: 0;
     width: 100%;
     position: relative;
-}
-
-.nav {
+  }
+  
+  .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,13 +65,13 @@ li {
     width: 100%;
     height: 80px;
     padding: 1rem 2rem;
-    background-color: rgb(255,255,255,0.3);
+    background-color: rgb(255, 255, 255, 0.3);
     backdrop-filter: blur(15px);
     z-index: 1000;
     top: 0;
-}
-
-.nav__logo {
+  }
+  
+  .nav__logo {
     width: 400px;
     display: flex;
     position: absolute;
@@ -61,144 +79,147 @@ li {
     left: 60px;
     filter: blur(1px);
     -webkit-filter: blur(1px);
-    opacity: .4;
-}
-
-.nav__logo img {
+    opacity: 0.4;
+  }
+  
+  .nav__logo img {
     width: 100%;
-}
-.nav__container {
+  }
+  .nav__container {
     flex: 1;
     text-align: right;
-}
-
-.nav__items {
+  }
+  
+  .nav__items {
     display: inline-block;
     padding: 4px 6px;
     position: relative;
     margin-left: 25px;
-}
-
-.nav__items::after {
+  }
+  
+  .nav__items::after {
     content: "";
     width: 0%;
     height: 2px;
     background: #23d8f8;
     display: block;
     margin: auto;
-    transition: .6s ease;
-}
-
-.nav__items:hover::after {
+    transition: 0.6s ease;
+  }
+  
+  .nav__items:hover::after {
     width: 100%;
-}
-
-.nav__links {
+  }
+  
+  .nav__links {
     color: rgb(133, 133, 133);
     font-weight: 300;
     font-size: 16px;
-}
-
-.nav__logo-title {
-    color:rgb(133, 133, 133);
+  }
+  
+  .nav__logo-title {
+    color: rgb(133, 133, 133);
     font-weight: 600;
     font-size: 32px;
-}
-
-.mobile-btn__open, 
-.mobile-btn__close {
+  }
+  
+  .mobile-btn__open,
+  .mobile-btn__close {
     display: none;
     visibility: hidden;
-}
-
-@media (max-width: 1024px) {
-
+  }
+  
+  @media (max-width: 1045px) {
     .nav__logo {
-        display: block;
-        width: 50%;
+      display: block;
+      width: 50%;
     }
-
+  
     .nav__logo-title {
-        font-size: 1rem;
+      font-size: 1rem;
     }
-
+  
     .nav__items {
-        display: block;
-        margin: 0;
-        padding: 0;
+      display: block;
+      margin: 0;
+      padding: 0;
     }
-
+  
     .nav__container {
-        display: flex;
-        justify-content: center;
-        backdrop-filter: blur(8px);
-        position: absolute;
-        height: 100vh;
-        width: 300px;
-        top: 0;
-        right: -500px;
-        text-align: center;
-        background: rgba(255, 255, 255, 0.9);
-        transition: 0.6s ease;
-        transition-property: right;
-        z-index: 1000;
+      display: flex;
+      justify-content: center;
+      backdrop-filter: blur(8px);
+      position: absolute;
+      height: 100vh;
+      width: 300px;
+      top: 0;
+      right: -500px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.9);
+      transition: 0.6s ease;
+      transition-property: right;
+      z-index: 1000;
     }
-
+  
     .nav__list {
-        margin-top: 50px;
-        padding: 20px;
-        height: 70vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+      margin-top: 50px;
+      padding: 20px;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
     }
-
+  
     .mobile-btn__close {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        font-size: 30px;
-        margin: 25px;
-        cursor: pointer;
-        color: rgb(133, 133, 133);
-        visibility: visible;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 30px;
+      margin: 25px;
+      cursor: pointer;
+      color: rgb(133, 133, 133);
+      visibility: visible;
     }
-
+  
     .mobile-btn__open {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 30px;
-        margin: 18px;
-        cursor: pointer;
-        color: rgb(133, 133, 133);
-        visibility: visible;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 30px;
+      margin: 18px;
+      cursor: pointer;
+      color: rgb(133, 133, 133);
+      visibility: visible;
     }
-}
-
-/*===============INTRO===============*/
-
-.intro {
+  }
+  
+  /*===============INTRO===============*/
+  
+  .intro {
     height: 100vh;
     width: 100%;
-}
-
-.intro__bg{
+  }
+  
+  .intro__bg {
     height: 100vh;
     width: 100%;
     position: absolute;
-    background: url("../img/home-4.jpg");
-    background-color: linear-gradient(rgba(166, 222, 255, 0.185), rgba(166, 222, 255, 0.479));
+    background: url("https://image.freepik.com/free-photo/empty-living-room-with-blue-sofa-plants-table-empty-white-wall-background-3d-rendering_41470-1778.jpg");
+    background-color: linear-gradient(
+      rgba(166, 222, 255, 0.185),
+      rgba(166, 222, 255, 0.479)
+    );
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     filter: blur(2px);
     -webkit-filter: blur(3px);
-}
-
-.intro__container {
+  }
+  
+  .intro__container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -208,24 +229,24 @@ li {
     position: relative;
     padding: 2rem;
     text-align: center;
-}
-
-.intro__title {
+  }
+  
+  .intro__title {
     padding: 1rem;
     font-weight: 400;
     font-size: 4rem;
     color: rgb(255, 255, 255);
-}
-
-.intro__container p {
+  }
+  
+  .intro__container p {
     margin: 10px 0 40px;
     font-size: 1rem;
     color: rgb(133, 133, 133);
-}
-
-.btn,
-.btn:focus,
-.btn:active {
+  }
+  
+  .btn,
+  .btn:focus,
+  .btn:active {
     color: rgb(133, 133, 133);
     border: 1px solid rgb(133, 133, 133);
     padding: 12px 34px;
@@ -233,146 +254,390 @@ li {
     background-color: transparent;
     position: relative;
     cursor: pointer;
-}
-
-.btn:hover {
-    background-color: rgba(255,255,255,0.2);
-    backdrop-filter: blur(15px);
-}
-
-@media (max-width: 768px) {
-
+  }
   
+  @media (max-width: 768px) {
     .intro__title {
-        font-size: 2.5rem;
+      font-size: 2.5rem;
     }
-
-}
-
-
-/*=============ABOUT============*/
-
-.about {
+  }
+  
+  /*=============ABOUT============*/
+  
+  .about {
     display: flex;
     align-items: center;
-}
-
-.about__left {
+  }
+  
+  .about__left {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     height: 100%;
-}
-
-.about__right {
+  }
+  
+  .about__right {
     flex: 1;
-    padding: 2rem;
-}
-
-.about__card.bg {
+    padding: 1.5rem 0;
+  }
+  
+  .about__card.bg {
     position: absolute;
     top: 50px;
     left: 100px;
-    background-color: rgba(122,212,213, 0.2);
+    background-color: rgba(17, 104, 120, 0.2);
     filter: blur(1px);
     -webkit-filter: blur(1px);
-}
-
-.about__card {
+  }
+  
+  .about__card {
     width: 60%;
     height: 60vh;
-    border-radius: 30px;
+  
     position: relative;
     overflow: hidden;
-    -webkit-box-shadow: 5px 5px 15px -6px #000000; 
-    box-shadow: 5px 5px 15px -6px #000000;
-}
-
-.about__img {
+    -webkit-box-shadow: 5px 5px 30px -9px #000000;
+    box-shadow: 5px 5px 30px -9px #000000;
+  }
+  
+  .about__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.about__title {
-    font-size: 2rem;
-    font-weight: 400;
+  }
+  
+  .about__title {
+  }
+  
+  .about__detail {
+    margin: 1rem 0;
+  }
+  
+  .about__details-desc {
     margin-bottom: 1rem;
     color: rgb(100, 100, 100);
-}
-
-.about__desc {
+  }
+  
+  .about__details-icon {
+    font-size: 1rem;
+    margin-top: 0.15rem;
+    color: rgba(17, 104, 120);
+  }
+  
+  @media (max-width: 1025px) {
+    .about {
+      flex-direction: column;
+    }
+  
+    .about__card {
+      width: 100%;
+      height: 30vh;
+    }
+  }
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column;
+    }
+  
+    .about__left {
+      display: none;
+    }
+  
+    .about__right {
+      margin: 4rem 0;
+    }
+  }
+  
+  /*============SERVICES=============*/
+  
+  .services {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: url("https://image.freepik.com/free-photo/gray-wooden-table-front-blur-white-sofa-living-room_23-2147907240.jpg");
+    background-color: linear-gradient(
+      rgba(166, 222, 255, 0.185),
+      rgba(166, 222, 255, 0.479)
+    );
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .services h2 {
+    margin: 0;
+  }
+  
+  .services__box {
+    padding: 2rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 3px 3px 13px -2px rgba(155, 155, 140, 0.9);
+    -webkit-box-shadow: 3px 3px 9px -2px rgba(155, 155, 140, 0.9);
+    -moz-box-shadow: 3px 3px 9px -2px rgba(155, 155, 140, 0.9);
+    min-width: 320px;
+    height: 200px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .box:hover {
+    background-color: rgba(17, 104, 120, 0.3);
+    border: 1px solid rgba(17, 104, 120,0.4);
+  }
+  
+  .box p {
+    margin: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .box {
+    }
+  }
+  
+  /*==================STEPS=================*/
+  
+  .step {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh -80px);
+    width: 100%;
+    padding: 2rem 2rem 0rem 2rem;
+    top: 80px;
+    position: relative;
+  }
+  
+  .step__title {
+    padding: 1rem 0;
+    width: 80%;
+  }
+  
+  .step__title span {
+    border-left: 0.3rem solid rgb(8, 49, 56);
+    padding-left: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  .step__title h2 {
+    margin: 1rem 0;
+  }
+  
+  .card-step {
+    width: 100%;
+    height: calc(100vh -80px);
+    top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 1rem 0;
+  }
+  
+  .card {
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .card span {
+    font-size: 4.5rem;
+    font-weight: 600;
+    position: absolute;
+    top: -50px;
+    left: -30px;
+    opacity: 0.1;
+    filter: blur(4px);
+  }
+  
+  .card h3 {
+    margin-bottom: 1rem;
+    z-index: 10;
+  }
+  
+  .card p {
+    margin-bottom: 1rem;
+    font-size: 0.825rem;
+  }
+  
+  .card a {
+    font-size: 1rem;
+    color: rgb(8, 49, 56);
+  }
+  
+  .card a:hover {
+    color: rgba(17, 104, 120, 0.7);
+    transition: 0.4s ease;
+  }
+  
+  .card i {
+    margin-left: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .card-wrapper {
+      flex-direction: column;
+    }
+    .card {
+      margin: 2rem 1rem;
+    }
+  }
+  
+  /*=====================FAQ=======================*/
+  
+  .faq {
+    background: url("https://image.freepik.com/fotos-gratis/fale-conosco-pergunta-atendimento-ao-cliente-conceito-de-suporte_53876-127572.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+  
+  }
+  
+  .faq__wrapper {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgba(255,255,255, 0.3);
+    backdrop-filter: blur(5px);
+    position: relative;
+    height: 100vh;
+  }
+  
+  .faq__wrapper > h2 {
+    margin-top: 2rem;
+  }
+  
+  .faq__container {
+    width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    position: relative;
+  }
+  
+  
+  .faq__group {
+    display: grid;
+    row-gap: 1.5rem;
+  }
+  
+  .faq__item {
+    background-color: #fff;
+    border-radius: 0.25rem;
+  }
+  
+  .faq__item-title {
     font-size: 1rem;
     font-weight: 300;
-    margin-bottom: 2rem;
-    color: rgb(100, 100, 100);
-}
-
-.about__detail {
-    padding: 1rem 0;
-}
-.about__details-desc {
-    margin-bottom: 1rem;
-    color: rgb(100, 100, 100);
-}
-
-.about__details-icon {
-    font-size: 1rem;
-    margin-top: .15rem;
-    color: #23d8f8;
-   
-}
-@media (max-width: 1400px)  {
-    .about {
-        
-        flex-direction: column;
-    }
-
-    .about__card {
-        width: 100%;
-        height: 50vh;
-    }
-}
-@media (max-width: 1025px) {
-    .about {
-        
-        flex-direction: column;
-    }
-
-    .about__card {
-        width: 100%;
-        height: 30vh;
-    }
-}
-@media (max-width: 768px) {
-    .about {
-        flex-direction: column;
-    }
-
-    .about__left {
-        display: none;
-    }
-
-    .about__right {
-        margin: 4rem 0;
-    }
-
-
-}
-
-
-
-
-/*======STEPS=====*/
-.step {
+  }
+  
+  .faq__icon {
+    font-size: 1.25rem;
+    color: rgba(100, 100, 100);
+  }
+  
+  .faq__description {
+    font-size: 0.825rem;
+    padding: 0 1.25rem 1.25rem 2.5rem;
+  }
+  
+  .faq__header {
     display: flex;
-}
-
-.step__title {
-    display: flex;
-    flex-direction: ;
-}
-
-/*==========GLOBAL MOBILE===========*/
+    align-items: center;
+    column-gap: 0.5rem;
+    padding: 0.75rem 0.5rem;
+    cursor: pointer;
+  }
+  
+  .faq__header:hover {
+    background-color:  rgba(17, 104, 120, 0.2);
+  }
+  
+  .faq__content {
+    overflow: hidden;
+    height: 0;
+  }
+  
+  .faq__item,
+  .faq__header,
+  .faq__item-title,
+  .faq__icon,
+  .faq__description,
+  .faq__content {
+    transition: 0.3s;
+  }
+  
+  .faq__item:hover {
+    box-shadow: 0 2px 8px rgba(100, 100, 100, 0.5);
+  }
+  
+  /*Rotate icon, change color of titles and background*/
+  .accordion-open .faq__header,
+  .accordion-open .faq__content {
+    background-color:rgba(17, 104, 120);
+    backdrop-filter: blue(10px);
+  }
+  
+  .accordion-open .faq__item-title,
+  .accordion-open .faq__description,
+  .accordion-open .faq__icon {
+    color: #fff;
+  }
+  
+  .accordion-open .faq__icon {
+    transform: rotate(45deg);
+  }
+  
+  @media (max-width: 1100px) {
+    .faq__container {
+      flex-wrap: wrap;
+    }
+  }
+  
+  
+  /*=======ANIMATION===========*/
+  
+  .reveal {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  
+  .reveal.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  
