@@ -206,7 +206,7 @@
     height: 100vh;
     width: 100%;
     position: absolute;
-    background: url("https://image.freepik.com/free-photo/empty-living-room-with-blue-sofa-plants-table-empty-white-wall-background-3d-rendering_41470-1778.jpg");
+    background: url("../img/home-4.jpg");
     background-color: linear-gradient(
       rgba(166, 222, 255, 0.185),
       rgba(166, 222, 255, 0.479)
@@ -283,29 +283,8 @@
     padding: 1.5rem 0;
   }
   
-  .about__card.bg {
-    position: absolute;
-    top: 50px;
-    left: 100px;
-    background-color: rgba(17, 104, 120, 0.2);
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
-  }
-  
-  .about__card {
-    width: 60%;
-    height: 60vh;
-  
-    position: relative;
-    overflow: hidden;
-    -webkit-box-shadow: 5px 5px 30px -9px #000000;
-    box-shadow: 5px 5px 30px -9px #000000;
-  }
-  
   .about__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 600px;
   }
   
   .about__title {
@@ -386,6 +365,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: no-wrap;
+    position: relative;
     border: 1px solid #eee;
     border-radius: 5px;
     margin: 1rem;
@@ -395,11 +375,11 @@
     box-shadow: 3px 3px 13px -2px rgba(155, 155, 140, 0.9);
     -webkit-box-shadow: 3px 3px 9px -2px rgba(155, 155, 140, 0.9);
     -moz-box-shadow: 3px 3px 9px -2px rgba(155, 155, 140, 0.9);
-    min-width: 320px;
+    min-width: 500px;
     height: 200px;
     justify-content: center;
     align-content: center;
-    align-items: center;
+   
   }
   
   .box:hover {
@@ -408,7 +388,33 @@
   }
   
   .box p {
-    margin: 1rem;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: all .9s ease;
+    cursor: pointer;
+  }
+
+  .box:hover p {
+      padding: 1rem;
+      bottom: 49%;
+      opacity: 1;
+      cursor: pointer;
+  }
+
+  .box h3,
+  .box i {
+      padding: 1rem;
+      transition: .8s ease;
+  }
+
+  .box:hover h3,.box:hover i {
+      opacity: 0;
   }
   
   @media (max-width: 768px) {
@@ -512,24 +518,30 @@
   /*=====================FAQ=======================*/
   
   .faq {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     background: url("https://image.freepik.com/fotos-gratis/fale-conosco-pergunta-atendimento-ao-cliente-conceito-de-suporte_53876-127572.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
-   
-  
+ 
   }
   
   .faq__wrapper {
+    width: 80%;
+    height: 80vh;
      display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
     background-color: rgba(255,255,255, 0.3);
     backdrop-filter: blur(5px);
-    position: relative;
-    height: 100vh;
+    position: absolute;
   }
   
   .faq__wrapper > h2 {
@@ -630,13 +642,13 @@
   
   .reveal {
     position: relative;
-    transform: translateX(150px);
+    transform: translateY(150px);
     opacity: 0;
     transition: all 2s ease;
   }
   
   .reveal.active {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
   
