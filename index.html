@@ -5,313 +5,414 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="./assets/css/style.css">
-<title>Wermond's Cleaning Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css"/>     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Wermond's Cleaning Services</title>
 </head>
 
 <body>
 
-  <div class="header">
+    <div class="header">
 
-    <a href="#" class="nav__logo"><img src="./assets/img/logo 1.png" alt=""></a>
-    <nav class="nav">
-      <a href="#" class="nav__logo-title">Wermond's Cleaning</a>
-      <div class="nav__container" id="navContainer">
-        <a class="mobile-btn__close" id="closeBtn" onclick="closeNav()"> <i class="fa fa-times"></i></a>
-        <ul class="nav__list">
-          <li class="nav__items">
-            <a href="#" class="nav__links">HOME</a>
-          </li>
-          <li class="nav__items">
-            <a href="#about" class="nav__links">ABOUT US</a>
-          </li>
-          <li class="nav__items">
-            <a href="#services" class="nav__links">SERVICES</a>
-          </li>
-          <li class="nav__items">
-            <a href="#faq" class="nav__links">FAQ</a>
-          </li>
-          <li class="nav__items">
-            <a href="#" class="nav__links">CONTACT</a>
-          </li>
-        </ul>
-      </div>
-      <a class="mobile-btn__open" id="openBtn" onclick="openNav()"><i class="fa fa-bars"></i></a>
-    </nav>
-  </div>
-
-  <div class="intro">
-    <div class="intro__bg"></div>
-    <div class="intro__container">
-      <h1 class="intro__title">A Tradition of Quality Cleaning</h1>
-      <p>Every project is different. Every client is special.</p>
-      <a href="#" class="btn">Read More</a>
+        <a href="#" class="nav__logo"><img src="./assets/img/logo 1.png" alt=""></a>
+        <nav class="nav">
+            <a href="#" class="nav__logo-title">Wermond's Cleaning</a>
+            <div class="nav__container" id="navContainer">
+                <a class="mobile-btn__close" id="closeBtn" onclick="closeNav()"> <i class="fa fa-times"></i></a>
+                <ul class="nav__list">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">HOME</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#about" class="nav__links">ABOUT US</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#services" class="nav__links">SERVICES</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#faq" class="nav__links">FAQ</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="mobile-btn__open" id="openBtn" onclick="openNav()"><i class="fa fa-bars"></i></a>
+        </nav>
     </div>
-  </div>
 
-  <section class="about" id="about">
-    <div class="about__left ">
-     
-      <div class="about__card">
-        <img src="./assets/img/logo 1.png" alt="" class="about__img">
-      </div>
-    </div>
-    <div class="about__right reveal">
-      <h2 class="about__title reveal">About Us & <br> Why choose us</h2>
-
-      <p class="about__desc reveal">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae beatae voluptatum nihil dolores unde
-        alias tempore consequatur, id, exercitationem quis voluptates.
-      </p>
-
-      <div class="about__detail ">
-        <p class="about__details-desc ">
-          <i class="ri-checkbox-fill about__details-icon"></i>
-          Quick Cleaning.
-        </p>
-        <p class="about__details-desc ">
-          <i class="ri-checkbox-fill about__details-icon"></i>
-          High Quality.
-        </p>
-        <p class="about__details-desc ">
-          <i class="ri-checkbox-fill about__details-icon"></i>
-          Professional Cleaning.
-        </p>
-        <p class="about__details-desc ">
-          <i class="ri-checkbox-fill about__details-icon"></i>
-          Excellent Result.
-        </p>
-        <p class="about__details-desc">
-          <i class="ri-checkbox-fill about__details-icon"></i>
-          Excellent Result.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!---------SERVICES-------------->
-
-  <section class="services" id="services">
-    <h2>Our Cleaning Services</h2>
-    <div class="services__box">
-      <div class="box">
-        <i class="fas fa-home"></i>
-        <h3 class="service__desc">Residential</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error id recusandae provident dolorum corrupti praesentium</p>
-
-      </div>
-
-      <div class="box">
-        <i class="fas fa-home"></i>
-        <h3 class="service__desc">Commercial</h3>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error id recusandae provident dolorum corrupti praesentium</p>
-      </div>
-
-      <div class="box">
-        <i class="fas fa-home"></i>
-        <h3 class="service__desc">Move in/out</h3>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error id recusandae provident dolorum corrupti praesentium</p>
-      </div>
-
-      <div class="box">
-        <i class="fas fa-home"></i>
-        <h3 class="service__desc">One time</h3>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error id recusandae provident dolorum corrupti praesentium</p>
-      </div>
-
-      <div class="box">
-        <i class="fas fa-home"></i>
-        <h3 class="service__desc">Deep Clean </h3>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error id recusandae provident dolorum corrupti praesentium</p>
-      </div>
-
-      <div class="box">
-        <i class="fas fa-home"></i>
-        <h3 class="service__desc">Air BNB</h3>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error id recusandae provident dolorum corrupti praesentium</p>
-      </div>
-
-    </div>
-  </section>
-  <div class="step">
-
-    <div class="step__title">
-      <span>Useful info</span>
-      <h2>Steps to Start Your House Cleaning</h2>
-      <a href="" class="btn">Learn More</a>
-    </div>
-  </div>
-  <div class="card-step">
-    <div class="card-wrapper">
-      <div class="card reveal">
-        <span>01</span>
-        <h3 class="card__title reveal">Leave a Request on the Website or by Phone</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem velit illo sunt perferendis optio, atque cum aperiam magnam placeat praesentium asperna.</p>
-        <a href="">READ MORE<i class="fas fa-arrow-right reveal"></i></a>
-      </div>
-      <div class="card reveal">
-        <span>02</span>
-        <h3 class="card__title reveal">Leave a Request on the Website or by Phone</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem velit illo sunt perferendis optio, atque cum aperiam magnam placeat praesentium asperna.</p>
-        <a href="">READ MORE<i class="fas fa-arrow-right reveal"></i></a>
-      </div>
-      <div class="card reveal">
-        <span>03</span>
-        <h3 class="card__title reveal">Leave a Request on the Website or by Phone</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem velit illo sunt perferendis optio, atque cum aperiam magnam placeat praesentium asperna.</p>
-        <a href="">READ MORE<i class="fas fa-arrow-right reveal"></i></a>
-      </div>
-    </div>
-  </div>
-
-  <!--==================== QUESTIONS ====================-->
-  <section class="faq" id="faq">
-    <div class="faq__wrapper">
-       <h2>
-      Some common questions <br> were often asked
-    </h2>
-
-    <div class="faq__container">
-      <div class="faq__group">
-        <div class="faq__item">
-          <header class="faq__header">
-            <i class="ri-add-line faq__icon"></i>
-            <h3 class="faq__item-title">
-              My flowers are falling off or dying?
-            </h3>
-          </header>
-
-          <div class="faq__content">
-            <p class="faq__description">
-              Plants are easy way to add color energy and transform your
-              space but which planet is for you. Choosing the right plant.
-            </p>
-          </div>
+    <div class="intro">
+        <div class="intro__bg"></div>
+        <div class="intro__container">
+            <h1 class="intro__title">A Tradition of Quality Cleaning</h1>
+            <p>Every project is different. Every client is special.</p>
+            <a href="#" class="btn">Read More</a>
         </div>
-
-        <div class="faq__item">
-          <header class="faq__header">
-            <i class="ri-add-line faq__icon"></i>
-            <h3 class="faq__item-title">
-              What causes leaves to become pale?
-            </h3>
-          </header>
-
-          <div class="faq__content">
-            <p class="faq__description">
-              Plants are easy way to add color energy and transform your
-              space but which planet is for you. Choosing the right plant.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq__item">
-          <header class="faq__header">
-            <i class="ri-add-line faq__icon"></i>
-            <h3 class="faq__item-title">
-              What causes brown crispy leaves?
-            </h3>
-          </header>
-
-          <div class="faq__content">
-            <p class="faq__description">
-              Plants are easy way to add color energy and transform your
-              space but which planet is for you. Choosing the right plant.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="faq__group">
-        <div class="faq__item">
-          <header class="faq__header">
-            <i class="ri-add-line faq__icon"></i>
-            <h3 class="faq__item-title">
-              How do i choose a plant?
-            </h3>
-          </header>
-
-          <div class="faq__content">
-            <p class="faq__description">
-              Plants are easy way to add color energy and transform your
-              space but which planet is for you. Choosing the right plant.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq__item">
-          <header class="faq__header">
-            <i class="ri-add-line faq__icon"></i>
-            <h3 class="faq__item-title">
-              How do I change the pots?
-            </h3>
-          </header>
-
-          <div class="faq__content">
-            <p class="faq__description">
-              Plants are easy way to add color energy and transform your
-              space but which planet is for you. Choosing the right plant.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq__item">
-          <header class="faq__header">
-            <i class="ri-add-line faq__icon"></i>
-            <h3 class="faq__item-title">
-              Why are gnats flying around my plant?
-            </h3>
-          </header>
-
-          <div class="faq__content">
-            <p class="faq__description">
-              Plants are easy way to add color energy and transform your
-              space but which planet is for you. Choosing the right plant.
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
-    </div>
-  </section>
 
-  <!-----------CONTACT---------------->
+    <section class="about" id="about">
+        <div class="about__left ">
 
-  <div class="step">
+            <div class="about__card">
+                <img src="./assets/img/logo 1.png" alt="" class="about__img">
+            </div>
+        </div>
+        <div class="about__right reveal">
+            <h2 class="about__title reveal">About Us & <br> Why choose us</h2>
 
-    <div class="step__title">
-      <span>Useful info</span>
-      <h2>Steps to Start Your House Cleaning</h2>
-      <a href="" class="btn">Learn More</a>
+            <p class="about__desc reveal">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae beatae voluptatum nihil dolores unde
+                alias tempore consequatur, id, exercitationem quis voluptates.
+            </p>
+
+            <div class="about__detail ">
+                <p class="about__details-desc ">
+                    <i class="ri-checkbox-fill about__details-icon"></i>
+                    Quick Cleaning.
+                </p>
+                <p class="about__details-desc ">
+                    <i class="ri-checkbox-fill about__details-icon"></i>
+                    High Quality.
+                </p>
+                <p class="about__details-desc ">
+                    <i class="ri-checkbox-fill about__details-icon"></i>
+                    Professional Cleaning.
+                </p>
+                <p class="about__details-desc ">
+                    <i class="ri-checkbox-fill about__details-icon"></i>
+                    Excellent Result.
+                </p>
+                <p class="about__details-desc">
+                    <i class="ri-checkbox-fill about__details-icon"></i>
+                    Excellent Result.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!---------SERVICES-------------->
+
+    <section class="services" id="services">
+        <h2>Our Cleaning Services</h2>
+        <div class="services__box">
+            <div class="box">
+                <i class="fas fa-home"></i>
+                <h3 class="service__desc">Residential</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-home"></i>
+                <h3 class="service__desc">Commercial</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error id recusandae provident dolorum
+                    corrupti praesentium aasdsad</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-home"></i>
+                <h3 class="service__desc">Move in/out</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error id recusandae provident dolorum
+                    corrupti praesentium</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-home"></i>
+                <h3 class="service__desc">One time</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error id recusandae provident dolorum
+                    corrupti praesentium</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-home"></i>
+                <h3 class="service__desc">Deep Clean </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error id recusandae provident dolorum
+                    corrupti praesentium</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-home"></i>
+                <h3 class="service__desc">Air BNB</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error id recusandae provident dolorum
+                    corrupti praesentium</p>
+            </div>
+
+        </div>
+    </section>
+    <div class="step">
+
+        <div class="step__title">
+            <span>Useful info</span>
+            <h2>Steps to Start Your House Cleaning</h2>
+            <a href="" class="btn">Learn More</a>
+        </div>
     </div>
-  </div>
-  <div class="card-step">
-    <div class="card-wrapper">
-      <div class="card ">
-        <span>01</span>
-        <h3 class="card__title ">Leave a Request on the Website or by Phone</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem velit illo sunt perferendis optio, atque cum aperiam magnam placeat praesentium asperna.</p>
-        <a href="">READ MORE<i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="card">
-        <span>02</span>
-        <h3 class="card__title ">Leave a Request on the Website or by Phone</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem velit illo sunt perferendis optio, atque cum aperiam magnam placeat praesentium asperna.</p>
-        <a href="">READ MORE<i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="card">
-        <span>03</span>
-        <h3 class="card__title ">Leave a Request on the Website or by Phone</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem velit illo sunt perferendis optio, atque cum aperiam magnam placeat praesentium asperna.</p>
-        <a href="">READ MORE<i class="fas fa-arrow-right"></i></a>
-      </div>
+    <div class="card-step">
+        <div class="card-wrapper">
+            <div class="card reveal">
+                <span>01</span>
+                <h3 class="card__title reveal">Leave a Request on the Website or by Phone</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem velit illo sunt perferendis optio,
+                    atque cum aperiam magnam placeat praesentium aspernaaasda.</p>
+                <a href="">READ MORE<i class="fas fa-arrow-right reveal"></i></a>
+            </div>
+            <div class="card reveal">
+                <span>02</span>
+                <h3 class="card__title reveal">Leave a Request on the Website or by Phone</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem velit illo sunt perferendis optio,
+                    atque cum aperiam magnam placeat praesentium aspernaasdasda.</p>
+                <a href="">READ MORE<i class="fas fa-arrow-right reveal"></i></a>
+            </div>
+            <div class="card reveal">
+                <span>03</span>
+                <h3 class="card__title reveal">Leave a Request on the Website or by Phone</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem velit illo sunt perferendis optio,
+                    atque cum aperiam magnam placeat praesentium aspernaasdasdasdasd.</p>
+                <a href="">READ MORE<i class="fas fa-arrow-right reveal"></i></a>
+            </div>
+        </div>
     </div>
-  </div>
-  <script src="./assets/js/reveal.js"></script>
-  <script src="./assets/js/index.js"></script>
+
+    <!--==================== QUESTIONS ====================-->
+    <section class="faq" id="faq">
+        <div class="faq__wrapper">
+            <h2>
+                Some common questions <br> were often asked
+            </h2>
+
+            <div class="faq__container">
+                <div class="faq__group">
+                    <div class="faq__item">
+                        <header class="faq__header">
+                            <i class="ri-add-line faq__icon"></i>
+                            <h3 class="faq__item-title">
+                                My flowers are falling off or dying?
+                            </h3>
+                        </header>
+
+                        <div class="faq__content">
+                            <p class="faq__description">
+                                Plants are easy way to add color energy and transform your
+                                space but which planet is for you. Choosing the right plant.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <header class="faq__header">
+                            <i class="ri-add-line faq__icon"></i>
+                            <h3 class="faq__item-title">
+                                What causes leaves to become pale?
+                            </h3>
+                        </header>
+
+                        <div class="faq__content">
+                            <p class="faq__description">
+                                Plants are easy way to add color energy and transform your
+                                space but which planet is for you. Choosing the right plant.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <header class="faq__header">
+                            <i class="ri-add-line faq__icon"></i>
+                            <h3 class="faq__item-title">
+                                What causes brown crispy leaves?
+                            </h3>
+                        </header>
+
+                        <div class="faq__content">
+                            <p class="faq__description">
+                                Plants are easy way to add color energy and transform your
+                                space but which planet is for you. Choosing the right plant.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq__group">
+                    <div class="faq__item">
+                        <header class="faq__header">
+                            <i class="ri-add-line faq__icon"></i>
+                            <h3 class="faq__item-title">
+                                How do i choose a plant?
+                            </h3>
+                        </header>
+
+                        <div class="faq__content">
+                            <p class="faq__description">
+                                Plants are easy way to add color energy and transform your
+                                space but which planet is for you. Choosing the right plant.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <header class="faq__header">
+                            <i class="ri-add-line faq__icon"></i>
+                            <h3 class="faq__item-title">
+                                How do I change the pots?
+                            </h3>
+                        </header>
+
+                        <div class="faq__content">
+                            <p class="faq__description">
+                                Plants are easy way to add color energy and transform your
+                                space but which planet is for you. Choosing the right plant.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <header class="faq__header">
+                            <i class="ri-add-line faq__icon"></i>
+                            <h3 class="faq__item-title">
+                                Why are gnats flying around my plant?
+                            </h3>
+                        </header>
+
+                        <div class="faq__content">
+                            <p class="faq__description">
+                                Plants are easy way to add color energy and transform your
+                                space but which planet is for you. Choosing the right plant.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----------CONTACT---------------->
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Testimonials</h2>
+                <span class="section-separator"></span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </div>
+        <div class="testimonials-carousel-wrap">
+            <div class="listing-carousel-button listing-carousel-button-next"><i class="fa fa-caret-right" style="color: #fff"></i></div>
+            <div class="listing-carousel-button listing-carousel-button-prev"><i class="fa fa-caret-left" style="color: #fff"></i></div>
+            <div class="testimonials-carousel">
+                <div class="swiper-container">
+                    <div class="tc-pagination"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testi-item">
+                                <div class="testi-avatar"><img src="./assets/img/image-1.png"></div>
+                                <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                <div class="testimonials-text">
+                                    <div class="listing-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                   
+                                    <div class="testimonials-avatar">
+                                        <h3>John Doe</h3>
+                                        <h4>Owner</h4>
+                                    </div>
+                                </div>
+                                <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+                            </div>
+                        </div>
+    
+                        <!--second--->
+                        <div class="swiper-slide">
+                            <div class="testi-item">
+                                <div class="testi-avatar"><img src="./assets/img/image-2.png"></div>
+                                <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                <div class="testimonials-text">
+                                    <div class="listing-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                   
+                                    <div class="testimonials-avatar">
+                                        <h3>Doe Boe</h3>
+                                        <h4>Director</h4>
+                                    </div>
+                                </div>
+                                <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+                            </div>
+                        </div>
+                        <!--third-->
+    
+                        <div class="swiper-slide">
+                            <div class="testi-item">
+                                <div class="testi-avatar"><img src="./assets/img/image-3.png"></div>
+                                <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                <div class="testimonials-text">
+                                    <div class="listing-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                   
+                                    <div class="testimonials-avatar">
+                                        <h3>Boe Doe</h3>
+                                        <h4>Developer</h4>
+                                    </div>
+                                </div>
+                                <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+                            </div>
+                        </div>
+    
+                        <!--fourth-->
+                        <div class="swiper-slide">
+                            <div class="testi-item">
+                                <div class="testi-avatar"><img src="./assets/img/image-4.png"></div>
+                                <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                <div class="testimonials-text">
+                                    <div class="listing-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                  
+                                    <div class="testimonials-avatar">
+                                        <h3>Doe John</h3>
+                                        <h4>Designer</h4>
+                                    </div>
+                                </div>
+                                <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+                            </div>
+                        </div>
+                        <!--testi end-->
+    
+                    </div>
+                </div>
+            </div> 
+           
+        </div>
+        
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/reveal.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/slider.js"></script>
 </body>
 
 </html>
