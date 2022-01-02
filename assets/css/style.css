@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
   }
   
   html {
@@ -9,7 +10,7 @@
   }
   
   body {
-    font-family: "Poppins", sans-serif;
+   
     overflow-x: hidden;
     letter-spacing: 0.1rem;
   }
@@ -643,33 +644,27 @@
   /*=============TESTIMONIALS==============*/
 
 .testimonials {
-    float: left;
+    display: flex;
+    flex-direction: column;
     z-index: 1;
 }
 .section-title{
-	float: left;
+    display: flex;
+    flex-direction: column;
 	position: relative;
 	width: 100%;
 	padding-bottom: 40px; 
 }
 .section-title p{
-	color: #fd0606;
-	font-size: 13px;
-	line-height: 20px;
-	max-width: 550px;
+	font-size: 1rem;
+	text-align: center;
 	margin: 0 auto;
 }
 .section-title h2 {
-	float: left;
-	width: 100%;
 	text-align: center;
-	color: #007aff;
-	font-size: 34px;
-	font-weight: 800;
 	position: relative;
 }
 .section-separator {
-	float: left;
 	width: 100%;
 	position: relative;
 	margin: 20px 0;
@@ -683,7 +678,7 @@
 	width: 50px;
 	border-radius: 3px;
 	z-index: 2;
-	background-color: #007aff;
+	background-color: rgb(7,215,228);
 	margin-left: -25px;
 }
 .swiper-container {
@@ -691,7 +686,7 @@
 	height: 100%;
     padding: 2rem 1.5rem;
 }
-.listing-carousel-button{
+.listing-carousel-button {
 	position: absolute;
 	top: 50%;
 	width: 80px;
@@ -700,28 +695,36 @@
 	margin-top: -25px;
 	z-index: 100;
 	cursor: pointer;
-	background: #33c2ee;
+	background: rgb(7,215,228);
 	box-shadow: 0 9px 26px rgba(58, 87,135,0.45);
 	transition: all 200ms linear;
 	outline: none;
 }
+
+.listing-carousel-button i {
+    color: #fff;
+    padding: 1rem 1.5rem;
+}
+
 .listing-carousel-button-next{
 	right: -30px;
 	padding-right: 20px;
 	border-radius: 60px 0 0 60px;
 }
+
 .listing-carousel-button-prev{
 	left: -30px;
 	padding-left: 20px;
 	border-radius: 0 60px 60px 0;
 }
+
 .listing-carousel-button.listing-carousel-button-next:hover{
 	right: -15px;
-	background: rgba(6,27,65,0.4);
+	background: rgba(7, 213, 228, 0.7);
 }
 .listing-carousel-button.listing-carousel-button-prev:hover{
 	left: -15px;
-	background: rgba(6,27,65,0.4);
+	background: rgba(7, 213, 228, 0.7);;
 }
 .testi-item {
 	transition: all .3s ease-in-out;
@@ -732,12 +735,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    height: 355px;
 	padding: 75px 50px 75px;
 	overflow:hidden;
 	background: #f5f6fa;
 	border:1ps solid #f1f1f1;
-	border-radius: 10px;
+	border-radius: 0px;
 	transition: all .3s ease-in-out;
 }
 .testimonials-text-after{
@@ -770,7 +774,7 @@
 	margin-bottom: 12px;
 }
 .listing-rating i{
-	color: #007aff;
+	color: rgb(73,238,205);
 }
 .testimonials-avatar h3{
 	font-weight: 600;
@@ -809,10 +813,10 @@
 }
 .testimonials-text p{
 	color: #878c9f;
-	font-size: 14px;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 0.875rem;
+	
 	font-style: italic;
-	line-height: 24px;
+	line-height: 1.5rem;
 	padding-bottom: 10px;
 	font-weight: 500;
 }
@@ -835,7 +839,6 @@
 .tc-pagination{
 	margin-top: 30px;
     position: absolute;
-    
 }
 .tc-pagination_wrap {
 	position: absolute;
