@@ -12,7 +12,7 @@ function closeNav() {
 }
 window.addEventListener("scroll", scrollReveal);
 function scrollReveal() {
-  var revealPoint = 120;
+  var revealPoint = 150;
   var revealElement = document.querySelectorAll(".reveal");
   for (var i = 0; i < revealElement.length; i++) {
     var windowHeight = window.innerHeight;
