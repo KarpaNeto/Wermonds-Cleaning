@@ -326,9 +326,7 @@
     width: 520px;
   }
   
-  .about__title {
-  }
-  
+
   .about__detail {
     margin: 1rem 0;
   }
@@ -1046,6 +1044,7 @@
 
   .contact__form {
     width: 100%;
+    margin: 5rem 0;
   }
 
   .contact__inputs {
@@ -1124,11 +1123,7 @@ color: #646464;
   text-align: center;
 }
 
-@media and screen (max-width:768px) {
-  .footer__container {
-    justify-content: flex-start;
-  }
-}
+
 
   /*=======ANIMATION===========*/
   
@@ -1158,8 +1153,4 @@ color: #646464;
       html {
           font-size: 95%;
       }
-}
-
-@media (max-width: 1120px){
- 
 }
