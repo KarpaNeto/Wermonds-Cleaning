@@ -7,7 +7,7 @@ function openNav() {
 }
 
 function closeNav() {
-    navContainer.style.right = "-500px";
+    navContainer.style.right = "-100%";
     openBtn.style.display = "block";
 }
 window.addEventListener("scroll", scrollReveal);
