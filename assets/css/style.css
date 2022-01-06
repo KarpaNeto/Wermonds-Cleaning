@@ -213,7 +213,7 @@
     height: 100vh;
     width: 100%;
     position: absolute;
-    background: url("../img/home-4.jpg");
+    background: rgb(230, 230, 230);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -228,7 +228,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     position: relative;
     padding: 2rem;
     text-align: center;
@@ -349,11 +349,13 @@ width: 350px;
     margin-left: 30px;
   }
 
+  
   .about__img {
     width: 520px;
     border-radius: 8px;
   }
   
+
   .about__detail {
     margin: 1rem 0;
   }
