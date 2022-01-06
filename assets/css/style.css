@@ -213,7 +213,7 @@
     height: 100vh;
     width: 100%;
     position: absolute;
-    background: rgb(230, 230, 230);
+    background: url("../img/home-4.jpg");
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -228,7 +228,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     position: relative;
     padding: 2rem;
     text-align: center;
