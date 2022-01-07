@@ -7,9 +7,13 @@ function openNav() {
 }
 
 function closeNav() {
-    navContainer.style.right = "-100%";
+    navContainer.style.right = "-1000px";
     openBtn.style.display = "block";
 }
+
+
+
+
 window.addEventListener("scroll", scrollReveal);
 function scrollReveal() {
   var revealPoint = 150;

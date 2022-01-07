@@ -19,16 +19,15 @@
 
 <body>
 
-    <div class="header">
+    <header class="header">
+        <div class="header__logo">
+            <a href="#" class="logo__link"><img src="./assets/img/logo.png" alt=""></a>
+        </div>
+        <div class="header__container">
+            <nav class="nav">
 
-      
-        <nav class="nav">
-          
-           <!--<a href="#" class="nav__logo-title">Wermond's Cleaning</a>--> 
-            <div class="nav__container" id="navContainer">
-                <a href="#" class="nav__logo"><img src="./assets/img/logo.png" alt=""></a>
-                <a class="mobile-btn__close" id="closeBtn" onclick="closeNav()"> <i class="fa fa-times"></i></a>
-                <ul class="nav__list">
+                <ul class="nav__list" id="navContainer">
+                    <a class="mobile-btn__close" id="closeBtn" onclick="closeNav()"> <i class="fa fa-times"></i></a>
                     <li class="nav__items">
                         <a href="#" class="nav__links">HOME</a>
                     </li>
@@ -45,45 +44,30 @@
                         <a href="#contact" class="nav__links">CONTACT</a>
                     </li>
                 </ul>
-            </div>
-            <a class="mobile-btn__open" id="openBtn" onclick="openNav()"><i class="fa fa-bars"></i></a>
-        </nav>
 
-    <div class="intro">
-        
+            </nav>
+            <a class="mobile-btn__open" id="openBtn" onclick="openNav()"><i class="fa fa-bars"></i></a>
+        </div>
+    </header>
+
+
+    <section class="intro">
         <div class="intro__bg"></div>
-      
-        
         <div class="intro__container">
-            <div class="intro__logo ">
-                <img src="./assets/img/logo 1.png" alt="">
-            </div>
+
             <h1 class="intro__title">A Tradition of Quality Cleaning</h1>
             <p>Every project is different. Every client is special.</p>
             <a href="#about" class="btn">Read More</a>
-            <div class="home__social">
-                <div class="home__social-follow"><span>Follow Us</span></div>
-        
-                <div class="home__social-links">
-                    <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
-                        <i class="ri-facebook-fill"></i>
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
-                        <i class="ri-instagram-line"></i>
-                    </a>
-                    <a href="https://linkedin.com/" target="_blank" class="home__social-link">
-                        <i class="ri-linkedin-fill"></i>
-                    </a>
-                </div>
-            </div>
+
         </div>
-    </div>
-   
+    </section>
+
     <section class="about reveal" id="about">
         <div class="about__left">
 
             <div class="about__card">
-                <img src="https://as2.ftcdn.net/v2/jpg/03/43/57/61/1000_F_343576162_vRuL4QjcurU0SU85I3pXLTHIu1BoUhdF.jpg" alt="" class="about__img">
+                <img src="https://as2.ftcdn.net/v2/jpg/03/43/57/61/1000_F_343576162_vRuL4QjcurU0SU85I3pXLTHIu1BoUhdF.jpg"
+                    alt="" class="about__img">
             </div>
         </div>
         <div class="about__right">
@@ -177,29 +161,6 @@
 
                 </div>
             </div>
-            <!--------
-              <div class="box">
-                <i class="fas fa-home"></i>
-                <h3 class="service__desc">Commercial</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error id recusandae provident dolorum
-                    corrupti praesentium aasdsad</p>
-            </div>
-            
-    <div class="box">
-                <i class="fas fa-home"></i>
-                <h3 class="service__desc">One time</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error id recusandae provident dolorum
-                    corrupti praesentium</p>
-            </div>
-
-            <div class="box">
-                <i class="fas fa-home"></i>
-                <h3 class="service__desc">Deep Clean </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error id recusandae provident dolorum
-                    corrupti praesentium</p>
-            </div>
-    ----->
-
 
             <div class="box" id="box-3">
                 <h3 class="service__desc">Airbnb/Vacation</h3>
@@ -233,7 +194,6 @@
         <div class="step__title">
             <span>Useful info</span>
             <h2>Steps to Start Your House Cleaning</h2>
-            <a href="" class="btn">Learn More</a>
         </div>
     </div>
     <div class="card-step reveal">
