@@ -20,11 +20,11 @@ body {
 
 section {
   width: 100%;
-  min-height: calc(100vh - 80px);
+  min-height: 100vh;
   position: relative;
   padding: 2rem;
-  top: 80px;
 }
+
 
 a {
   text-decoration: none;
@@ -166,25 +166,18 @@ h3 {
 
 /*===============INTRO===============*/
 .intro {
-  background: url("https://as2.ftcdn.net/v2/jpg/01/93/32/49/1000_F_193324942_hCSePwn1aUXaUDImayQxjw1OqYMZdjSB.jpg");
+  background: url(https://as2.ftcdn.net/v2/jpg/03/46/75/25/1000_F_346752549_anfr7xwLxlhvPlnnTskWJhScrdYjVHRw.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .intro__container {
-  width: 100%;
-  height: 100%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -481,9 +474,9 @@ h3 {
   display: flex;
   justify-content: center;
   width: 100%;
+  height: 100%;
   padding: 1rem 3rem;
-  top: 80px;
-  position: relative;
+
 }
 
 .step__title {
@@ -502,8 +495,7 @@ h3 {
 
 .card-step {
   width: 100%;
-  top: 80px;
-  position: relative;
+  height: 100%;
   display: flex;
   justify-content: center;
   padding: 2rem;
@@ -569,6 +561,7 @@ h3 {
 
 .faq {
   width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -749,7 +742,7 @@ h3 {
   margin-top: -25px;
   z-index: 100;
   cursor: pointer;
-  background: rgba(17, 104, 120);
+  background: rgb(34, 224, 210);
   box-shadow: 0 9px 26px rgba(58, 87, 135, 0.45);
   transition: all 200ms linear;
   outline: none;
@@ -774,12 +767,12 @@ h3 {
 
 .listing-carousel-button.listing-carousel-button-next:hover {
   right: -15px;
-  background: rgba(17, 104, 120, 0.8);
+  background: rgba(6, 209, 245, 0.8);
 }
 
 .listing-carousel-button.listing-carousel-button-prev:hover {
   left: -15px;
-  background: rgba(17, 104, 120, 0.8);
+  background: rgba(6, 209, 245, 0.8);
 }
 
 .testi-item {
@@ -840,7 +833,7 @@ h3 {
 
 .testimonials-avatar h3 {
   font-weight: 600;
-  color: #7d93b2;
+  color: rgba(6, 209, 245, 0.8);
   font-size: 18px;
 }
 
@@ -931,7 +924,7 @@ h3 {
 
 .tc-pagination .swiper-pagination-bullet, .tc-pagination2.swiper-pagination-bullet {
   opacity: 1;
-  background: #384f95;
+  background: rgb(34, 224, 210);
   margin: 0 2px;
   width: 10px;
   height: 10px;
@@ -941,6 +934,13 @@ h3 {
 
 
 /*===========CONTACT=============*/
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
 
 .contact__container {
   display: flex;
@@ -1033,6 +1033,16 @@ h3 {
   z-index: 10;
 }
 
+.contact__banner {
+  width: 100vw;
+  height: 50vh;
+  left: 0;
+  background: url("https://as1.ftcdn.net/v2/jpg/03/68/84/76/1000_F_368847663_eYv590yt0Sz8gfL6u3Q7yBJYzwkT4kmZ.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media screen and (max-width: 768px) {
   .contact__container {
     flex-direction: column;
@@ -1054,7 +1064,10 @@ h3 {
 /*============footer==========*/
 
 .footer {
-  background: linear-gradient(90deg, rgb(34, 224, 210), #49EECD);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: linear-gradient(90deg, rgb(34, 224, 210), rgb(6, 215, 229));
 }
 
 .footer-container {
@@ -1064,8 +1077,8 @@ h3 {
 }
 
 .footer-box {
-  flex: 0 1 25rem;
-  margin: 3rem;
+  flex: 1;
+  margin: 2rem;
 }
 
 .footer-box h3 {
@@ -1112,14 +1125,22 @@ h3 {
 }
 
 .footer .credit {
-  font-size: 1rem;
-  font-weight: normal;
-  letter-spacing: .1rem;
+  font-size: 14px;
+  font-weight: 400;
   color: #fff;
   border-top: .1rem solid #fff5;
   padding: 2.5rem 1rem;
   text-align: center;
+  margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}
+  
+
 
 
 
