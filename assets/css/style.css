@@ -116,10 +116,6 @@ h3 {
 @media screen and (max-width: 854px) {
 
 
-  .nav__logo-title {
-    font-size: 1rem;
-  }
-
   .nav__items {
     margin: 20px 0;
     padding: 20px;
@@ -516,7 +512,7 @@ h3 {
   position: absolute;
   top: -40px;
   left: -10px;
-  opacity: 0.2;
+  opacity: 0.3;
   filter: blur(4px);
   color: rgb(34, 224, 210);
 }
