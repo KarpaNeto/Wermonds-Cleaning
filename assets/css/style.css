@@ -481,7 +481,7 @@ h3 {
 }
 
 .step__title span {
-  border-left: 0.3rem solid rgb(8, 49, 56);
+  border-left: 0.3rem solid rgb(34, 224, 210);
   padding-left: 0.5rem;
   margin: 1rem 0;
 }
@@ -516,8 +516,9 @@ h3 {
   position: absolute;
   top: -40px;
   left: -10px;
-  opacity: 0.1;
+  opacity: 0.2;
   filter: blur(4px);
+  color: rgb(34, 224, 210);
 }
 
 .card h3 {
