@@ -334,7 +334,7 @@ h3 {
 
   .about__right {
     margin: 0;
-    width: 80%;
+    padding: 0 1rem;
   }
 
   .about__img {
