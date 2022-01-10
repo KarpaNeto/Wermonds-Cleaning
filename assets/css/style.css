@@ -122,14 +122,13 @@ h3 {
 
   .nav__items {
     margin: 0;
-    margin-bottom: 50px;
+    padding: 50px;
     padding: 0;
   }
 
   .nav__list {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -151,7 +150,7 @@ h3 {
     top: 0;
     font-size: 30px;
     cursor: pointer;
-    color: rgb(133, 133, 133);
+    color: rgb(34, 224, 210);
     visibility: visible;
   }
 
@@ -159,7 +158,7 @@ h3 {
     display: flex;
     font-size: 30px;
     cursor: pointer;
-    color: rgb(133, 133, 133);
+    color: rgb(34, 224, 210);
     visibility: visible;
   }
 }
