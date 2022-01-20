@@ -20,34 +20,47 @@
 <body>
 
     <header class="header">
+        <div class="header-infos">
+            <div class="header-info-links">
+                <a href="#">instagram</a>
+                <a href="#">facebook</a>
+                <a href="#">email</a>
+            </div>
+            
+            <div class="header-contact">
+
+                <p>contact@contact.com</p>
+                <p>DMV Area</p>
+                <p>(240) 418-9924</p>
+
+            </div>
+        </div>
         <div class="header__logo">
-            <a href="#" class="logo__link"><img src="./assets/img/logo.png" alt=""></a>
+            <a href="#"><img src="./assets/img/logo 1.png" width="180" alt=""></a>
         </div>
-        <div class="header__container">
-            <nav class="nav">
+        <nav class="nav">
+            <ul class="nav__list" id="navContainer">
+                <a class="mobile-btn__close" id="closeBtn" onclick="closeNav()"> <i class="fa fa-times"></i></a>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">HOME</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#about" class="nav__links">ABOUT</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#services" class="nav__links">SERVICES</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#faq" class="nav__links">FAQ</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#contact" class="nav__links">CONTACT</a>
+                </li>
+            </ul>
 
-                <ul class="nav__list" id="navContainer">
-                    <a class="mobile-btn__close" id="closeBtn" onclick="closeNav()"> <i class="fa fa-times"></i></a>
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">HOME</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#about" class="nav__links">ABOUT US</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#services" class="nav__links">SERVICES</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#faq" class="nav__links">FAQ</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#contact" class="nav__links">CONTACT</a>
-                    </li>
-                </ul>
+        </nav>
+        <a class="mobile-btn__open" id="openBtn" onclick="openNav()"><i class="fa fa-bars"></i></a>
 
-            </nav>
-            <a class="mobile-btn__open" id="openBtn" onclick="openNav()"><i class="fa fa-bars"></i></a>
-        </div>
     </header>
 
 
@@ -508,8 +521,8 @@
                     Send Message
                     <i class="ri-arrow-right-up-line button__icon"></i>
                 </button>
-            </form>       
-        </div>  
+            </form>
+        </div>
     </div>
     <!--FOOTER-->
 
