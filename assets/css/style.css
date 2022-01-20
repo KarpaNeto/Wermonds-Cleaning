@@ -160,7 +160,7 @@ h3 {
 
 /*===============INTRO===============*/
 .intro {
-  background: url('https://ssmaids.com/images/istockphoto-1184689521-612x612.jpg?crc=330557992');
+  background: url('https://as2.ftcdn.net/v2/jpg/03/43/57/61/1000_F_343576162_vRuL4QjcurU0SU85I3pXLTHIu1BoUhdF.jpg');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -184,7 +184,7 @@ h3 {
   margin: 0;
   font-weight: 700;
   font-size: 4rem;
-  color: rgb(9, 248, 196);
+  color: rgb(48,229,212);
   text-shadow: 5px 5px 10px rgb(80, 80, 80);
 }
 
@@ -192,8 +192,8 @@ h3 {
   margin: .625rem 0 2.5rem;
   padding: 0 3rem;
   font-size: 1rem;
-  color: rgb(77, 77, 77);
-  text-shadow: 5px 5px 10px rgb(34, 34, 34);
+  color: rgb(73,238,205);
+  text-shadow: 1px 1px 10px rgb(34, 34, 34);
 }
 
 .btn,
