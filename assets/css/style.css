@@ -71,6 +71,7 @@ h3 {
   align-items: center;
   background-color: transparent;
   height: 2vw;
+  margin-top: 1rem;
 }
 
 .header-info-links>a {
@@ -101,6 +102,7 @@ h3 {
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  margin-top: 2rem;
 }
 
 .nav__list {
@@ -210,7 +212,7 @@ h3 {
 .btn,
 .btn:focus,
 .btn:active {
-  color: rgb(1, 155, 144);
+  color: #fff;
   border: 2px solid rgb(34, 224, 211);
   border-radius: 10px;
   padding: 12px 34px;
