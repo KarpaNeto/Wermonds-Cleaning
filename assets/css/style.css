@@ -75,8 +75,12 @@ h3 {
   font-size: 1rem;
 }
 
+.header-info-links {
+  display: flex;
+}
+
 .header-info-links>a>i {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .header-infos::after {
@@ -96,13 +100,19 @@ h3 {
 
 .header-contact {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 
 }
 
-.header-contact>p {
+.header-contact>a {
   margin-inline: 1rem;
   color: #fff;
 }
+
+
 
 .header__logo {
   width: 100%;
@@ -127,11 +137,14 @@ h3 {
   justify-content: space-around;
 }
 
-.nav__items {}
 
 .nav__links {
   margin-inline: 1.5rem;
-  color: rgba(255, 255, 255, .8)
+  color: rgba(255, 255, 255, .9)
+}
+
+.nav__links:hover {
+  color: rgb(10, 238, 215);
 }
 
 .mobile-btn__open,
@@ -148,10 +161,9 @@ h3 {
     padding: 20px;
   }
 
-  .nav__list {
-    display: flex;
-    flex-direction: column;
+  .nav {
     position: absolute;
+    margin: 0;
     height: 100vh;
     width: 100%;
     top: 0;
@@ -164,11 +176,27 @@ h3 {
     z-index: 1000;
   }
 
+.nav__list {
+    display: block;
+    position: absolute;
+    top: 8vh;
+    width: 100%;
+}
+
+  .header__logo {
+    display: none;
+  }
+
+  .nav__links {
+    color: rgb(34, 224, 210, 1);
+  }
+
   .mobile-btn__close {
     display: flex;
+    justify-content: flex-end;
     position: relative;
-    padding: 25px;
     top: 0;
+  margin-inline: 2.5rem;
     font-size: 30px;
     cursor: pointer;
     color: rgb(34, 224, 210);
@@ -177,6 +205,8 @@ h3 {
 
   .mobile-btn__open {
     display: flex;
+    justify-content: flex-end;
+    margin: 3.5rem 2.5rem;
     font-size: 30px;
     cursor: pointer;
     color: rgb(34, 224, 210);
@@ -503,7 +533,7 @@ h3 {
 }
 
 .step__title {
-  width: 100%;
+  width: 80%;
 }
 
 .step__title span {
@@ -517,10 +547,11 @@ h3 {
 }
 
 .card-step {
-  width: 100%;
+  max-width: 80%;
   height: 100%;
   display: flex;
   justify-content: center;
+  margin-inline: auto;
   padding: 2rem;
 }
 
@@ -534,6 +565,9 @@ h3 {
 .card {
   padding: 0 1rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card span {
