@@ -9,6 +9,7 @@ function openNav() {
 function closeNav() {
     navContainer.style.right = "-1000px";
     openBtn.style.display = "flex";
+
 }
 
 
