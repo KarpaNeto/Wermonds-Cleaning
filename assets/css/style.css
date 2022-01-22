@@ -659,7 +659,7 @@ h3 {
   justify-content: center;
   align-items: center;
   position: relative;
-  background: url("../img/faq.png");
+  /* background: url("../img/faq.png"); */
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -672,9 +672,9 @@ h3 {
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
-
+  padding: 2rem 0;
 }
 
 .faq__wrapper>h2 {
@@ -724,6 +724,7 @@ h3 {
   column-gap: 0.5rem;
   padding: 0.75rem 0.5rem;
   cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(194,194,194);
 }
 
 .faq__header:hover {
