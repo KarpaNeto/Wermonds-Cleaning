@@ -1,21 +1,11 @@
 const navContainer = document.getElementById("navContainer");
 const openBtn = document.getElementById('openBtn');
 const closeBtn = document.getElementById('closeBtn');
-const navLink = document.querySelector('.nav__links');
-
-// function openNav() {
-//     navContainer.style.right = "0";
-//     openBtn.style.display = "none";
-// }
-
-// function closeNav() {
-//     navContainer.style.right = "-1000px";
-//     openBtn.style.display = "block";
-// }
+const navLink = document.querySelectorAll('.nav__links');
 
 if (openBtn) {
   openBtn.addEventListener('click', () => {
-    navContainer.classList.toggle('show-menu')
+    navContainer.classList.add('show-menu')
     openBtn.style.display = "none";
   });
 }
@@ -26,6 +16,14 @@ if (closeBtn) {
     openBtn.style.display = "block";
   })
 };
+if (navLink) {
+  navLink.forEach(function (e) {
+    e.addEventListener('click', () => {
+      navContainer.classList.remove('show-menu')
+      openBtn.style.display = "block"
+    })
+  })
+}
 
 
 
