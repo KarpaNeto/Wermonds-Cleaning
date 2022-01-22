@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  overflow-x: hidden !important;
+  overflow-x: hidden;
   letter-spacing: 0.1rem;
   background-color: rgb(245, 245, 245);
 }
@@ -89,8 +89,8 @@ h3 {
   height: 120px;
   position: absolute;
   top: 0;
+  left: 0;
   z-index: 1000;
-
 }
 
 .header-infos {
@@ -134,12 +134,14 @@ h3 {
   align-items: center;
   align-content: center;
   justify-content: center;
+  padding: 1rem;
 
 }
 
 .header-contact>a {
   margin-inline: 1rem;
   color: #fff;
+  font-size: .725rem;
 }
 
 
@@ -245,9 +247,10 @@ h3 {
   }
 
   .mobile-btn__open {
-    display: flex;
-    justify-content: flex-end;
-    margin: 2rem;
+    display: block;
+    right: 0;
+    position: absolute;
+    margin: 2.5rem 2rem;
     font-size: 30px;
     cursor: pointer;
     color: rgb(34, 224, 210);
@@ -266,10 +269,10 @@ h3 {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: #fff;
 }
 
 .intro__container {
+  position: relative;
   text-align: center;
 }
 
@@ -507,7 +510,7 @@ h3 {
 }
 
 .box-layer {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100%;
   position: absolute;
