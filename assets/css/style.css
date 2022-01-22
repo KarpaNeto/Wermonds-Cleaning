@@ -60,6 +60,7 @@ h3 {
 .scrollup{
   position: fixed;
   background-color: rgb(34, 224, 210);
+  box-shadow: 1px 1px 5px rgb(0,0,0);
   right: 1rem;
   bottom: -30%;
   display: inline-flex;
@@ -216,14 +217,14 @@ h3 {
     justify-content: center;
     position: absolute;
     height: 100vh;
+    width: 100%;
     top: 0;
-    right: -100%;
+    right: -1000px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(15px);
     transition: 0.6s ease;
     transition-property: right;
-
   }
 
   .header__logo {
@@ -233,6 +234,11 @@ h3 {
   .nav__links {
     color: rgb(34, 224, 210, 1);
   }
+
+  .show-menu {
+    right: 0;
+  }
+
 
   .mobile-btn__close {
     display: block;
@@ -439,6 +445,13 @@ h3 {
 }
 
 /*=====service====*/
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .services h2 {
   text-align: center;
@@ -863,7 +876,7 @@ h3 {
   min-height: 360px;
   padding: 75px 50px 75px;
   overflow: hidden;
-  background: #f5f6fa;
+  background: rgb(236, 236, 236);
   border: 1ps solid #f1f1f1;
   border-radius: 0px;
   transition: all .3s ease-in-out;

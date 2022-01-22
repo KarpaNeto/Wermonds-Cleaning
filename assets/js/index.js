@@ -1,16 +1,33 @@
-var navContainer = document.getElementById("navContainer");
-var openBtn = document.getElementById('openBtn');
-function openNav() {
-    navContainer.style.right = "0";
+const navContainer = document.getElementById("navContainer");
+const openBtn = document.getElementById('openBtn');
+const closeBtn = document.getElementById('closeBtn');
+const navLink = document.querySelector('.nav__links');
+
+// function openNav() {
+//     navContainer.style.right = "0";
+//     openBtn.style.display = "none";
+// }
+
+// function closeNav() {
+//     navContainer.style.right = "-1000px";
+//     openBtn.style.display = "block";
+// }
+
+if (openBtn) {
+  openBtn.addEventListener('click', () => {
+    navContainer.classList.toggle('show-menu')
     openBtn.style.display = "none";
-
+  });
 }
 
-function closeNav() {
-    navContainer.style.right = "-1000px";
-    openBtn.style.display = "flex";
+if (closeBtn) {
+  closeBtn.addEventListener('click', () => {
+    navContainer.classList.remove('show-menu');
+    openBtn.style.display = "block";
+  })
+};
 
-}
+
 
 
 
@@ -65,13 +82,13 @@ const toggleItem = (item) => {
 
 /*  SCROLL UP */
 
-function scrollUp(){
+function scrollUp() {
   const scrollUp = document.getElementById('scroll-up');
   // When the scroll is higher than 400 viewport height, add the show-scroll class to the a tag with the scroll-top class
-  if(this.scrollY >= 400) {
-    scrollUp.classList.add('show-scroll'); 
+  if (this.scrollY >= 400) {
+    scrollUp.classList.add('show-scroll');
   } else {
     scrollUp.classList.remove('show-scroll');
-  } 
+  }
 }
 window.addEventListener('scroll', scrollUp)
