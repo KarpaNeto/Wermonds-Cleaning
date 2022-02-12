@@ -101,17 +101,18 @@ h3 {
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  height: 30px;
+  height: 35px;
   margin-top: 1rem;
-  font-size: 1rem;
 }
 
 .header-info-links {
   display: flex;
+  margin-left: 2rem;
 }
 
 .header-info-links>a>i {
   font-size: 1.5rem;
+  
 }
 
 .header-infos::after {
@@ -120,7 +121,7 @@ h3 {
   width: 100%;
   background-color: rgba(255, 255, 255, .5);
   position: absolute;
-  top: 50px;
+  top: 70px;
   left: 0;
 }
 
@@ -135,23 +136,24 @@ h3 {
   align-items: center;
   align-content: center;
   justify-content: center;
-  padding: 1rem;
-
+  padding: 2rem;
 }
 
 .header-contact>a {
   margin-inline: 1rem;
   color: #fff;
-  font-size: .725rem;
+  font-size: 1rem;
 }
-
-
 
 .header__logo {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.logo__mobile {
+  display: none;
 }
 
 .nav {
@@ -195,12 +197,7 @@ h3 {
   }
 
   .header-infos {
-    border-bottom: 1px solid rgba(255, 255, 255, .5);
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    top: 0;
-    margin: 0;
+    display: none;
   }
 
   .header-infos::after {
@@ -225,10 +222,19 @@ h3 {
     backdrop-filter: blur(15px);
     transition: 0.6s ease;
     transition-property: right;
+    z-index: 1000;
   }
 
   .header__logo {
     display: none;
+  }
+
+  .logo__mobile {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1.5rem;
   }
 
   .nav__links {
@@ -243,7 +249,7 @@ h3 {
   .mobile-btn__close {
     display: block;
     position: absolute;
-    top: 30px;
+    top: 15px;
     left: 0;
     margin: 2rem;
     font-size: 30px;
@@ -254,9 +260,10 @@ h3 {
 
   .mobile-btn__open {
     display: block;
-    right: 0;
+    top: 30px;
+    right: 10px;
     position: absolute;
-    margin: 2.5rem 2rem;
+    padding: 1rem;
     font-size: 30px;
     cursor: pointer;
     color: rgb(34, 224, 210);
@@ -275,6 +282,13 @@ h3 {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+
+.box-layer {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 .intro__container {
@@ -468,7 +482,7 @@ h3 {
   padding: 2rem;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-content: center;
   flex-wrap: wrap;
 }
@@ -484,7 +498,8 @@ h3 {
   padding: 2rem;
   text-align: center;
   height: 700px;
-  min-width: 400px;
+  width: 500px;
+  min-width: 300px;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -506,7 +521,7 @@ h3 {
   background: url("/assets/img/move-in-out.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   box-shadow: 3px 3px 13px -2px rgba(155, 155, 140, 0.9);
   -webkit-box-shadow: 3px 3px 9px -2px rgba(155, 155, 140, 0.9);
   -moz-box-shadow: 3px 3px 9px -2px rgba(155, 155, 140, 0.9);
@@ -520,14 +535,6 @@ h3 {
   box-shadow: 3px 3px 13px -2px rgba(155, 155, 140, 0.9);
   -webkit-box-shadow: 3px 3px 9px -2px rgba(155, 155, 140, 0.9);
   -moz-box-shadow: 3px 3px 9px -2px rgba(155, 155, 140, 0.9);
-}
-
-.box-layer {
-  background: rgba(0, 0, 0, 0.4);
-  width: 100%;
-  height: 100%;
-  position: absolute;
- 
 }
 
 .service__details-desc {
@@ -554,14 +561,10 @@ h3 {
 .step {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   padding: 1rem 3rem;
-
-}
-
-.step__title {
-  width: 80%;
 }
 
 .step__title span {
@@ -575,10 +578,10 @@ h3 {
 }
 
 .card-step {
-  max-width: 80%;
   height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-inline: auto;
   padding: 2rem;
 }
@@ -640,6 +643,13 @@ h3 {
 
   .card {
     margin: 2rem 1rem;
+    padding: 0;
+  }
+
+  .card-step {
+    margin: 0;
+    padding: 0;
+
   }
 }
 

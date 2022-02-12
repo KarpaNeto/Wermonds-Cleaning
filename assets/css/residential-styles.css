@@ -1,0 +1,42 @@
+.residential__intro {
+    background: url('https://as2.ftcdn.net/v2/jpg/02/45/78/17/1000_F_245781737_aoXsyQUsiuh0g8I6Go4inpaKpQsxMx1n.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.residential__wrapper {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    justify-items: stretch;
+    height: 100vh;
+}
+
+.fas.fa-check {
+    color: lightgreen;
+}
+
+.mg-t-1>*:where(:not(:first-child)) {
+    margin-top: 1rem;
+}
+
+.residential__list>li {
+    font-weight: 700;
+    color: rgb(100, 100, 100);
+}
+
+.residential__list>li>* {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.residential__items>*:where(:not(:first-child)) {
+    margin-top: .5rem;
+}
+
