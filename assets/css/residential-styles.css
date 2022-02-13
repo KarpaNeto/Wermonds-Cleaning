@@ -8,14 +8,14 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-
 }
+
 .residential__wrapper {
-    display: grid;
-    place-items: center;
-    align-content: center;
-    justify-items: stretch;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 2rem 9%;
 }
 
 .fas.fa-check {
@@ -40,3 +40,87 @@
     margin-top: .5rem;
 }
 
+.services {
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-bottom: 2rem;
+    overflow: hidden;
+}
+
+.services>.heading {
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(100, 100, 100);
+}
+
+.services .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 4rem 4rem 4rem;
+}
+
+.services .box-container .box-service {
+    flex: 1 1 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    background: #fff;
+    border: .1rem solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    align-self: flex-start;
+}
+
+.services .box-container .box-service:nth-child(0),
+.services .box-container .box-service:hover {
+    border: .1rem solid #333;
+}
+
+.services .box-container .box-service .title {
+    color: rgb(100,100,100);
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 1rem;
+}
+
+.services .box-container .box-service:last-child .title {
+    color: rgb(223, 27, 27);
+}
+
+.services .box-container .box-service ul {
+    padding: 1rem 0;
+    list-style: none;
+    min-height: 680px;
+}
+
+.services .box-container .box-service:last-child ul {
+    min-height: 100%;
+}
+
+.services .box-container .box-service ul li {
+    font-size: 1rem;
+    color: #666;
+    padding: .5rem 0;
+}
+
+.services .box-container .box-service ul li .fa-check {
+    color: lightgreen;
+}
+
+.services .box-container .box-service ul li .fa-times {
+    color: tomato;
+}
+
+@media screen and (max-width: 768px) {
+
+    .services .box-container {
+        padding: 0;
+    }
+
+    .services .box-container .box-service ul {
+        min-height: 100%;
+    }
+}
