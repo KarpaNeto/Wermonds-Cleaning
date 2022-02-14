@@ -48,6 +48,12 @@ h3 {
   color: rgb(8, 49, 56);
 }
 
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .btn:hover {
   background-color: rgb(34, 224, 210, 0.7);
   backdrop-filter: blur(15px);
@@ -55,6 +61,9 @@ h3 {
   transition: all .5s ease;
 }
 
+.mg-t-1>*:where(:not(:first-child)) {
+  margin-top: 1rem;
+}
 
 /* SCROLL UP */
 .scrollup{
@@ -283,6 +292,8 @@ h3 {
   flex-direction: column;
   justify-content: center;
 }
+
+
 
 .box-layer {
   background: rgba(0, 0, 0, 0.4);
@@ -1150,15 +1161,6 @@ h3 {
   z-index: 10;
 }
 
-.contact__banner {
-  width: 100vw;
-  height: 50vh;
-  left: 0;
-  background: url("https://as1.ftcdn.net/v2/jpg/03/68/84/76/1000_F_368847663_eYv590yt0Sz8gfL6u3Q7yBJYzwkT4kmZ.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 @media screen and (max-width: 768px) {
   .contact__container {

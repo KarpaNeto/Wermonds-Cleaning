@@ -1,13 +1,9 @@
 .residential__intro {
-    background: url('https://as2.ftcdn.net/v2/jpg/02/45/78/17/1000_F_245781737_aoXsyQUsiuh0g8I6Go4inpaKpQsxMx1n.jpg');
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
 }
 
 .residential__wrapper {
@@ -20,10 +16,6 @@
 
 .fas.fa-check {
     color: lightgreen;
-}
-
-.mg-t-1>*:where(:not(:first-child)) {
-    margin-top: 1rem;
 }
 
 .residential__list>li {
