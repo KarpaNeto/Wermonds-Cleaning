@@ -6,30 +6,9 @@
     overflow: hidden;
 }
 
-.residential__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem 0;
-    padding: 2rem 9%;
-}
 
 .fas.fa-check {
     color: lightgreen;
-}
-
-.residential__list>li {
-    font-weight: 700;
-    color: rgb(100, 100, 100);
-}
-
-.residential__list>li>* {
-    font-size: 1rem;
-    font-weight: normal;
-}
-
-.residential__items>*:where(:not(:first-child)) {
-    margin-top: .5rem;
 }
 
 .services {
