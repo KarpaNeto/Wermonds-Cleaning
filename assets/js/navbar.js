@@ -2,6 +2,7 @@ const navContainer = document.getElementById("navContainer");
 const openBtn = document.getElementById('openBtn');
 const closeBtn = document.getElementById('closeBtn');
 const navLink = document.querySelectorAll('.nav__links');
+const dropdown = document.getElementById('dropdown');
 
 if (openBtn) {
     openBtn.addEventListener('click', () => {

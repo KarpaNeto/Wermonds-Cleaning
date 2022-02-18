@@ -231,6 +231,29 @@ video {
   color: rgb(10, 238, 215);
 }
 
+
+.dropdown__menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: rgb(34, 224, 210, 0.7);
+  padding: 2rem 1.5rem;
+  transition: all .5s ease;
+}
+
+.nav__items:hover .dropdown__menu {
+  display: flex;
+  transition: all .5s ease;
+}
+
+.dropdown__menu >*:where(:not(:first-child)) {
+  margin-top: 1.5rem;
+}
+
+.dropdown__menu li a {
+  color: #fff;
+}
+
 .mobile-btn__open,
 .mobile-btn__close {
   display: none;
@@ -241,7 +264,7 @@ video {
 
   .header {
     position: fixed;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(255, 255, 255, .8);
   }
 
   .header-infos {
@@ -266,7 +289,7 @@ video {
     top: 0;
     right: -1000px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, .8);
     backdrop-filter: blur(15px);
     transition: 0.6s ease;
     transition-property: right;
@@ -292,7 +315,6 @@ video {
   .show-menu {
     right: 0;
   }
-
 
   .mobile-btn__close {
     display: block;
@@ -439,14 +461,14 @@ video {
 /* ====EXTRA CONTENT ======= */
 .extraContent {
   background: rgb(17, 17, 17);
-  background: linear-gradient(146deg, rgba(17, 17, 17, 1) 0%, rgba(51, 51, 51, 1) 33%, rgba(68, 68, 68, 1) 54%, rgba(51, 51, 51, 1) 100%);
+  background: linear-gradient(146deg, rgba(213, 213, 213, 1) 0%, rgba(224, 224, 224, 1) 33%, rgba(235, 235, 235, 1) 54%, rgba(255, 255, 255, 1) 100%);
   padding: 2rem;
 
 }
 
 .extraContent h3 {
   text-align: center;
-  color: #fff;
+  color: #333;
   text-transform: capitalize;
 }
 
@@ -466,7 +488,7 @@ video {
 }
 
 .extra-box p {
-  color: #fff;
+  color: #333;
   margin-top: .5rem;
   padding: 0 2rem;
 }
