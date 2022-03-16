@@ -511,25 +511,26 @@
                 </div>
             </div>
 
-            <form action="" class="contact__form">
+            <form action="https://formsubmit.co/contact@wermondscleaning.com" method="POST" class="contact__form">
+                <input type="hidden" name="_template" value="table">
                 <div class="contact__inputs">
                     <div class="contact__content">
-                        <input type="email" placeholder=" " class="contact__input">
-                        <label for="" class="contact__label">Email</label>
+                        <input type="email" name="email" placeholder=" " class="contact__input" required>
+                        <label for="email" class="contact__label">Email</label>
                     </div>
 
                     <div class="contact__content">
-                        <input type="text" placeholder=" " class="contact__input">
-                        <label for="" class="contact__label">Subject</label>
+                        <input type="text" name="subject" placeholder=" " class="contact__input" required>
+                        <label for="subject" class="contact__label" value=" ">Subject</label>
                     </div>
 
-                    <div class="contact__content contact__area">
+                    <div class="contact__content contact__area" required>
                         <textarea name="message" placeholder=" " class="contact__input"></textarea>
-                        <label for="" class="contact__label">Message</label>
+                        <label for="message" class="contact__label">Message</label>
                     </div>
                 </div>
 
-                <button class="btn">
+                <button class="btn" type="submit">
                     Send Message
                     <i class="ri-arrow-right-up-line button__icon"></i>
                 </button>
