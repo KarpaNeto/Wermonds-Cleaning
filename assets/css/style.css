@@ -1334,7 +1334,7 @@ video {
 
 .footer-box .info i {
   margin: .5rem 0;
-  margin-right: 1rem;
+  margin-right: .725rem;
   border-radius: 50%;
   background: #fff;
   color: #3f3f3f;
@@ -1391,6 +1391,6 @@ video {
 
 @media (max-width: 768px) {
   html {
-    font-size: 95%;
+    font-size: 80%;
   }
 }
