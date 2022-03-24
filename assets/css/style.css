@@ -1359,6 +1359,10 @@ video {
   .footer-container {
     flex-direction: column;
   }
+
+  .footer-box .info p {
+    word-break: break-all;
+  }
 }
 
 
@@ -1391,6 +1395,6 @@ video {
 
 @media (max-width: 768px) {
   html {
-    font-size: 60%;
+    font-size: 85%;
   }
 }
