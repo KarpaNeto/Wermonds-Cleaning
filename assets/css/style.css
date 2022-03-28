@@ -443,8 +443,17 @@ video {
 }
 
 @media screen and (max-width: 768px) {
+  .intro {
+    background-image: url('../img/home-2.jpg');
+  }
   .intro__title {
     font-size: 3rem;
+    color: #fff;
+  }
+
+  .intro__container p {
+    color: #fff;
+    margin-bottom: 3rem;
   }
 }
 
