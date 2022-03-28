@@ -264,7 +264,8 @@ video {
 
   .header {
     position: fixed;
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(255, 255, 255);
+    box-shadow: 1px 1px 35px #858585;
   }
 
   .header-infos {
@@ -445,6 +446,7 @@ video {
 @media screen and (max-width: 768px) {
   .intro {
     background-image: url('../img/home-2.jpg');
+    background-color: aqua;
   }
   .intro__title {
     font-size: 3rem;
