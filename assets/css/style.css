@@ -344,20 +344,30 @@ video {
 
 /*===============INTRO===============*/
 .intro {
-  background: url(../img/bc-intro.png);
+  /* background: url(../img/home-4.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size:cover;
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
-  background-position: center;
+  background-position: center; */
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
   z-index: 999;
+  clip-path: inset(0);
+}
+
+.intro-bg {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
 }
 
 .box-layer {
@@ -382,7 +392,7 @@ video {
   margin: 0;
   font-weight: 700;
   font-size: 4rem;
-  color: rgb(30, 205, 236);
+  color: #fff;
   text-shadow: 1px 1px 2px rgb(194, 194, 194);
 }
 
@@ -390,7 +400,7 @@ video {
   margin: .625rem 0 2.5rem;
   padding: 0 3rem;
   font-size: 1rem;
-  color: rgb(30, 205, 236);
+  color: #fff;
   text-shadow: 1px 1px 10px rgb(194, 194, 194);
 }
 
