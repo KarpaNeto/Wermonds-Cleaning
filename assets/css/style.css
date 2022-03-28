@@ -347,6 +347,7 @@ video {
   background: url(../img/bc-intro.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size:cover;
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
