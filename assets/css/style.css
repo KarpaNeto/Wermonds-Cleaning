@@ -367,7 +367,6 @@ video {
   position: fixed;
   top: 0;
   left: 0;
-  background-attachment: fixed;
 }
 
 .box-layer {
@@ -458,9 +457,16 @@ video {
 }
 
 @media screen and (max-width: 768px) {
-  .intro {
-    background-image: url(../img/home-2.jpg);
-    background-color: aqua;
+  .intro-bg {
+    display: none;
+  }
+
+  .intro-bg-mobile {
+    height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   }
   .intro__title {
     font-size: 3rem;
