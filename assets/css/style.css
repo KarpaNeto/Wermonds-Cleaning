@@ -344,14 +344,6 @@ video {
 
 /*===============INTRO===============*/
 .intro {
-  /* background: url(../img/home-4.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size:cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-position: center; */
   display: flex;
   align-items: center;
   flex-direction: column;
