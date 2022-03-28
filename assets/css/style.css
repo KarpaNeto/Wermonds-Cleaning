@@ -344,7 +344,7 @@ video {
 
 /*===============INTRO===============*/
 .intro {
-  background: url('../img/bc-intro.png');
+  background: url(../img/bc-intro.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   -o-background-size: cover;
@@ -448,7 +448,7 @@ video {
 
 @media screen and (max-width: 768px) {
   .intro {
-    background-image: url('../img/home-2.jpg');
+    background-image: url(../img/home-2.jpg);
     background-color: aqua;
   }
   .intro__title {
