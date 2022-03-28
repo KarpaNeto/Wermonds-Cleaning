@@ -345,15 +345,18 @@ video {
 /*===============INTRO===============*/
 .intro {
   background: url('../img/bc-intro.png');
-  background-size: cover;
-  background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  z-index: 999;
 }
 
 .box-layer {
