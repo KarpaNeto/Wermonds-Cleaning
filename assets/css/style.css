@@ -458,12 +458,14 @@ video {
   }
 
   .intro-bg-mobile {
+    display: block;
     height: 100%;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   }
+
   .intro__title {
     font-size: 3rem;
     color: #fff;
