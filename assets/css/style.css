@@ -1317,7 +1317,7 @@ video {
   width: 100%;
   height: 100%;
   position: relative;
-  background: linear-gradient(90deg, rgb(30, 205, 236), rgb(6, 215, 229));
+  background: linear-gradient(90deg, rgb(12, 152, 176), rgb(2, 142, 152));
 }
 
 .footer-container {
